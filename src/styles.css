@@ -1,0 +1,214 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  height: 100vh;
+  overflow: auto;
+}
+.backgroundImage {
+  background: url(https://cms-assets.tutsplus.com/uploads/users/209/posts/22145/image/22.png);
+  min-height: 100vh;
+}
+
+.fruit {
+  /* border: 1px solid white; */
+  font-size: 3.7rem;
+  padding: 1rem;
+}
+
+.btn-round {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  font-weight: bolder;
+  /* width: inherit; */
+  padding: 0.2rem 0.5rem;
+  margin: 0.5rem;
+}
+.card-container {
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  grid-gap: 12px;
+}
+
+.container-fruits {
+  padding-top: 4rem;
+}
+
+.navbar.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+}
+
+/* override card content*/
+.card-content {
+  padding: 0;
+}
+.cart-count {
+  left: 15px;
+}
+
+.cart {
+  padding-top: 5rem;
+  width: 100%;
+}
+
+.header {
+  color: black;
+}
+.fas.fa-store {
+  font-size: 1.4rem;
+  line-height: 20px;
+}
+.fas.fa-language {
+  font-size: 2.1rem;
+  line-height: 30px;
+}
+.fas.fa-shopping-cart {
+  width: 25px;
+}
+.badge-outer-wrapper {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+}
+.badge-wrapper {
+  margin-left: 10px;
+}
+
+.badge-wrapper:hover {
+  cursor: pointer;
+}
+
+.alert-success {
+  background-color: #064e3b;
+}
+.alert-danger {
+  background-color: #7f1d1d;
+  color: #fecaca;
+}
+.alert-content {
+  animation: Slideleft 0.4s;
+  animation-fill-mode: forwards;
+  padding: 1rem;
+}
+.alert-content.exit {
+  animation: Slideright 0.4s;
+  animation-fill-mode: forwards;
+}
+.alert-wrapper {
+  position: fixed;
+  top: 4rem;
+  width: 350px;
+  right: 20px;
+  z-index: 3;
+}
+.section-header {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 380px;
+}
+.section-quantity {
+  display: flex;
+  justify-content: center;
+}
+.empty-cart-image {
+  width: 100%;
+  height: auto;
+}
+
+.hide {
+  display: none;
+}
+
+.card-wrapper {
+  position: relative;
+}
+
+.badge-hurry {
+  background: var(--red);
+  color: white;
+  padding: 0.1rem 1rem;
+  border-radius: 0.2rem;
+  position: absolute;
+  left: 0px;
+  top: 10px;
+}
+
+.form-title {
+  color: black;
+}
+
+.form .input {
+  color: black;
+}
+.form label {
+  color: gray;
+  border-bottom-color: gray;
+}
+
+.form .input-password {
+  padding-bottom: 2rem;
+}
+
+.loading-img-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 180px;
+  color: white;
+  z-index: 99;
+}
+
+.loading {
+  background: transparent;
+  width: 100%;
+  height: auto;
+}
+.error {
+  background: transparent;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .alert-content {
+    /* width: 40%; */
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .btn {
+    max-width: 190px;
+  }
+  .alert-wrapper {
+    right: 0;
+    width: 100%;
+  }
+}
+
+@keyframes Slideleft {
+  0% {
+    margin-left: 120%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+@keyframes Slideright {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 120%;
+  }
+}
